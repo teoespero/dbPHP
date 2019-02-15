@@ -28,12 +28,11 @@
 				<div class="col-sm-6">
 					<form action="forms_create.php" method="post">
 					<div class="form-group">
-								<label for="username">Username</label>
-								<input type="text" placeholder="Username" name="username" class="form-control">
-
-								<label for="password">Password</label>
-								<input type="password" placeholder="Password" name="password" class="form-control"><br>
-								<input type="submit" name="submit" class="btn btn-primary">
+						<?php 
+							while (mysqli_fetch_row($result)) {
+								
+							}
+						?>
 					</div>
 					</form>
 				</div>
