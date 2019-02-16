@@ -64,6 +64,8 @@
 										if(!$result){
 											die('Query failed.' . mysqli_error());
 										}
+
+										// yay! it was successful
 										else{
 											echo "<br>", "User ", $IdNo, " has been updated.";
 										}
@@ -71,12 +73,12 @@
 
 									// no, indicate what was wrong
 									else{
-										echo "<h2>", "$warning", "</h2>";
+										echo "<h2>", $warning, "</h2>";
 										echo "Password supplied is less than the minimum of ", $minimum, " characters.";
 									}
 								}
 								else{
-										echo "<h2>", "$warning", "</h2>";
+										echo "<h2>", $warning, "</h2>";
 										echo "Username supplied is less than the minimum of ", $minimum, " characters.";
 								}
 							}
